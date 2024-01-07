@@ -1,0 +1,98 @@
+body{
+    background-color: #dbe9ff;
+}
+.heading{
+    color: rgb(7, 53, 123);
+    font-family: monospace;
+    font-size: 45px;
+    font-weight: 800;
+    position: absolute;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin-bottom: 10px;
+}
+.cont{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f9ff;
+    height: 40%;
+    width: min(90%,31.25em);
+    justify-self: center;
+    align-items: center;
+    padding: 3.75em 0;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.5em 1em #7792bc;
+}
+.num{
+    background-color: #3c98ff;
+    color: #f0f9ff;
+    position: relative;
+    width: 102%;
+    left: -5%;
+    padding: 20px;
+    border-radius: 0.3rem;
+    font-size: 40px;
+    font-family: "Roboto Mono",monospace;
+    box-shadow: 0 0.2em 1em #0e3b6e;
+    
+}
+#minutes{
+    margin-left: 28%;
+}
+.buttons{
+    
+    margin-left: 0%;
+    padding-top: 11.2%;   
+    
+}
+#start,#stop,#reset{
+     padding: 20px;
+     margin-left: 36px;
+     font-family: monospace;
+     font-size: 28px;
+     font-weight: 900;
+     cursor: pointer; 
+     color: rgb(4, 5, 23);
+}
+#start,#stop,#reset{
+    box-shadow: 0 0.5em 1em rgb(100, 91, 91);
+}
+#start{
+    background-color: green;
+}
+#stop{
+    background-color: red;
+}
+#reset{
+    background-color: yellow;
+}
+/* Your existing styles here */
+
+/* Add a media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .cont {
+      width: 90%; /* Adjust as needed for smaller screens */
+    }
+  
+    .num {
+      font-size: 30px; /* Adjust as needed for smaller screens */
+    }
+  
+    .buttons {
+      margin-left: 0%;
+      padding-top: 12%;
+      display: flex;
+    }
+  
+    #start, #stop, #reset {
+      margin-left: 29px;
+      font-size: 25px;
+      
+    }
+  }
+  
+  /* Add more media queries as needed for other screen sizes */
+  
